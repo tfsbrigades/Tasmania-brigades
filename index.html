@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tasmania Fire Service Brigades</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #d32f2f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .search-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .brigade-list {
+            max-width: 800px;
+            margin: auto;
+        }
+        .brigade-item {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .brigade-item a {
+            text-decoration: none;
+            color: #1976d2;
+            font-weight: bold;
+        }
+        .brigade-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function searchBrigades() {
+            const input = document.getElementById("searchInput").value.toLowerCase();
+            const items = document.getElementsByClassName("brigade-item");
+            for (let item of items) {
+                const name = item.textContent.toLowerCase();
+                item.style.display = name.includes(input) ? "" : "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Tasmania Fire Service Brigades</h1>
+        <p>Explore brigade pages by name</p>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" onkeyup="searchBrigades()" placeholder="Search for a brigade...">
+    </div>
+
+    <div class="brigade-list">
+<div class="brigade-item"><a href="brigades/Ansons_Bay.html">Ansons Bay</a></div>
+<div class="brigade-item"><a href="brigades/Arthur_River.html">Arthur River</a></div>
+<div class="brigade-item"><a href="brigades/Arthurs_Lake.html">Arthurs Lake</a></div>
+<div class="brigade-item"><a href="brigades/Avoca.html">Avoca</a></div>
+<div class="brigade-item"><a href="brigades/Bagdad.html">Bagdad</a></div>
+<div class="brigade-item"><a href="brigades/Barton.html">Barton</a></div>
+<div class="brigade-item"><a href="brigades/Beaconsfield.html">Beaconsfield</a></div>
+<div class="brigade-item"><a href="brigades/Beulah.html">Beulah</a></div>
+<div class="brigade-item"><a href="brigades/Bicheno.html">Bicheno</a></div>
+<div class="brigade-item"><a href="brigades/Binalong_Bay.html">Binalong Bay</a></div>
+<div class="brigade-item"><a href="brigades/Bishopsbourne.html">Bishopsbourne</a></div>
+<div class="brigade-item"><a href="brigades/Blessington.html">Blessington</a></div>
+<div class="brigade-item"><a href="brigades/Boat_H’Bour.html">Boat H’Bour</a></div>
+<div class="brigade-item"><a href="brigades/Bothwell.html">Bothwell</a></div>
+<div class="brigade-item"><a href="brigades/Bracknell.html">Bracknell</a></div>
+<div class="brigade-item"><a href="brigades/Bradys_Lake.html">Bradys Lake</a></div>
+<div class="brigade-item"><a href="brigades/Branxholm.html">Branxholm</a></div>
+<div class="brigade-item"><a href="brigades/Bridgenorth.html">Bridgenorth</a></div>
+<div class="brigade-item"><a href="brigades/Bridgewater.html">Bridgewater</a></div>
+<div class="brigade-item"><a href="brigades/Bridport.html">Bridport</a></div>
+<div class="brigade-item"><a href="brigades/Brighton.html">Brighton</a></div>
+<div class="brigade-item"><a href="brigades/Broadmarsh.html">Broadmarsh</a></div>
+<div class="brigade-item"><a href="brigades/Buckland.html">Buckland</a></div>
+<div class="brigade-item"><a href="brigades/Burnie_Fire_Brigade.html">Burnie Fire Brigade</a></div>
+<div class="brigade-item"><a href="brigades/Bushy_Park.html">Bushy Park</a></div>
+<div class="brigade-item"><a href="brigades/Cambridge.html">Cambridge</a></div>
+<div class="brigade-item"><a href="brigades/Campania.html">Campania</a></div>
+<div class="brigade-item"><a href="brigades/Campbell_Town.html">Campbell Town</a></div>
+<div class="brigade-item"><a href="brigades/Cape_Barren.html">Cape Barren</a></div>
+<div class="brigade-item"><a href="brigades/Carrick.html">Carrick</a></div>
+<div class="brigade-item"><a href="brigades/Castra.html">Castra</a></div>
+<div class="brigade-item"><a href="brigades/Channel.html">Channel</a></div>
+<div class="brigade-item"><a href="brigades/Chudleigh.html">Chudleigh</a></div>
+<div class="brigade-item"><a href="brigades/Claremont.html">Claremont</a></div>
+<div class="brigade-item"><a href="brigades/Claude_Road.html">Claude Road</a></div>
+<div class="brigade-item"><a href="brigades/Colebrook.html">Colebrook</a></div>
+<div class="brigade-item"><a href="brigades/Coles_Bay.html">Coles Bay</a></div>
+<div class="brigade-item"><a href="brigades/Collinsvale.html">Collinsvale</a></div>
+<div class="brigade-item"><a href="brigades/Cradle_Mtn.html">Cradle Mtn</a></div>
+<div class="brigade-item"><a href="brigades/Cradoc.html">Cradoc</a></div>
+<div class="brigade-item"><a href="brigades/Cranbrook.html">Cranbrook</a></div>
+<div class="brigade-item"><a href="brigades/Cressy.html">Cressy</a></div>
+<div class="brigade-item"><a href="brigades/Currie.html">Currie</a></div>
+<div class="brigade-item"><a href="brigades/Cygnet.html">Cygnet</a></div>
+<div class="brigade-item"><a href="brigades/Deep_Bay.html">Deep Bay</a></div>
+<div class="brigade-item"><a href="brigades/Deloraine.html">Deloraine</a></div>
+<div class="brigade-item"><a href="brigades/Derby.html">Derby</a></div>
+<div class="brigade-item"><a href="brigades/Devonport_Fire_Brigade.html">Devonport Fire Brigade</a></div>
+<div class="brigade-item"><a href="brigades/Dilston.html">Dilston</a></div>
+<div class="brigade-item"><a href="brigades/Dodges_Fer..html">Dodges Fer.</a></div>
+<div class="brigade-item"><a href="brigades/Dover.html">Dover</a></div>
+<div class="brigade-item"><a href="brigades/Dunalley.html">Dunalley</a></div>
+<div class="brigade-item"><a href="brigades/Eaglehawk_Neck.html">Eaglehawk Neck</a></div>
+<div class="brigade-item"><a href="brigades/Edith_Creek.html">Edith Creek</a></div>
+<div class="brigade-item"><a href="brigades/Elizabeth_Town.html">Elizabeth Town</a></div>
+<div class="brigade-item"><a href="brigades/Ellendale.html">Ellendale</a></div>
+<div class="brigade-item"><a href="brigades/Emita.html">Emita</a></div>
+<div class="brigade-item"><a href="brigades/Epping.html">Epping</a></div>
+<div class="brigade-item"><a href="brigades/Evandale.html">Evandale</a></div>
+<div class="brigade-item"><a href="brigades/Falmouth.html">Falmouth</a></div>
+<div class="brigade-item"><a href="brigades/Fern_Tree.html">Fern Tree</a></div>
+<div class="brigade-item"><a href="brigades/Fingal.html">Fingal</a></div>
+<div class="brigade-item"><a href="brigades/Forest.html">Forest</a></div>
+<div class="brigade-item"><a href="brigades/Forth_Valley.html">Forth Valley</a></div>
+<div class="brigade-item"><a href="brigades/Frankford_Biralee.html">Frankford/Biralee</a></div>
+<div class="brigade-item"><a href="brigades/Franklin.html">Franklin</a></div>
+<div class="brigade-item"><a href="brigades/Geeveston.html">Geeveston</a></div>
+<div class="brigade-item"><a href="brigades/George_Town.html">George Town</a></div>
+<div class="brigade-item"><a href="brigades/Gladstone.html">Gladstone</a></div>
+<div class="brigade-item"><a href="brigades/Glendevie.html">Glendevie</a></div>
+<div class="brigade-item"><a href="brigades/Glengarry.html">Glengarry</a></div>
+<div class="brigade-item"><a href="brigades/Golden_Valley.html">Golden Valley</a></div>
+<div class="brigade-item"><a href="brigades/Grassy.html">Grassy</a></div>
+<div class="brigade-item"><a href="brigades/Gravelley_Beach.html">Gravelley Beach</a></div>
+<div class="brigade-item"><a href="brigades/Great_Lake.html">Great Lake</a></div>
+<div class="brigade-item"><a href="brigades/Gretna.html">Gretna</a></div>
+<div class="brigade-item"><a href="brigades/Grove.html">Grove</a></div>
+<div class="brigade-item"><a href="brigades/Gunns_Plains.html">Gunns Plains</a></div>
+<div class="brigade-item"><a href="brigades/Hadspen.html">Hadspen</a></div>
+<div class="brigade-item"><a href="brigades/Hamilton.html">Hamilton</a></div>
+<div class="brigade-item"><a href="brigades/Hellyer.html">Hellyer</a></div>
+<div class="brigade-item"><a href="brigades/Hillwood.html">Hillwood</a></div>
+<div class="brigade-item"><a href="brigades/Hobart_Fire_Brigade.html">Hobart Fire Brigade</a></div>
+<div class="brigade-item"><a href="brigades/Howden.html">Howden</a></div>
+<div class="brigade-item"><a href="brigades/Huonville.html">Huonville</a></div>
+<div class="brigade-item"><a href="brigades/Irishtown.html">Irishtown</a></div>
+<div class="brigade-item"><a href="brigades/Jericho.html">Jericho</a></div>
+<div class="brigade-item"><a href="brigades/Kelso.html">Kelso</a></div>
+<div class="brigade-item"><a href="brigades/Kempton.html">Kempton</a></div>
+<div class="brigade-item"><a href="brigades/Kimberley.html">Kimberley</a></div>
+<div class="brigade-item"><a href="brigades/Kingston.html">Kingston</a></div>
+<div class="brigade-item"><a href="brigades/Koonya.html">Koonya</a></div>
+<div class="brigade-item"><a href="brigades/Lachlan.html">Lachlan</a></div>
+<div class="brigade-item"><a href="brigades/Lady_Barron.html">Lady Barron</a></div>
+<div class="brigade-item"><a href="brigades/Lake_River.html">Lake River</a></div>
+<div class="brigade-item"><a href="brigades/Latrobe.html">Latrobe</a></div>
+<div class="brigade-item"><a href="brigades/Lauderdale.html">Lauderdale</a></div>
+<div class="brigade-item"><a href="brigades/Launceston.html">Launceston</a></div>
+<div class="brigade-item"><a href="brigades/Lebrina.html">Lebrina</a></div>
+<div class="brigade-item"><a href="brigades/Legana.html">Legana</a></div>
+<div class="brigade-item"><a href="brigades/Lenah_Valley.html">Lenah Valley</a></div>
+<div class="brigade-item"><a href="brigades/Lilydale.html">Lilydale</a></div>
+<div class="brigade-item"><a href="brigades/Longford.html">Longford</a></div>
+<div class="brigade-item"><a href="brigades/Lorinna.html">Lorinna</a></div>
+<div class="brigade-item"><a href="brigades/Magra.html">Magra</a></div>
+<div class="brigade-item"><a href="brigades/Margate.html">Margate</a></div>
+<div class="brigade-item"><a href="brigades/Marrawah.html">Marrawah</a></div>
+<div class="brigade-item"><a href="brigades/Mathinna.html">Mathinna</a></div>
+<div class="brigade-item"><a href="brigades/Mawbanna.html">Mawbanna</a></div>
+<div class="brigade-item"><a href="brigades/Maydena.html">Maydena</a></div>
+<div class="brigade-item"><a href="brigades/Mayfield.html">Mayfield</a></div>
+<div class="brigade-item"><a href="brigades/Meander.html">Meander</a></div>
+<div class="brigade-item"><a href="brigades/Melrose.html">Melrose</a></div>
+<div class="brigade-item"><a href="brigades/Middleton.html">Middleton</a></div>
+<div class="brigade-item"><a href="brigades/Midway_Point.html">Midway Point</a></div>
+<div class="brigade-item"><a href="brigades/Mole_Creek.html">Mole Creek</a></div>
+<div class="brigade-item"><a href="brigades/Molesworth.html">Molesworth</a></div>
+<div class="brigade-item"><a href="brigades/Montagu.html">Montagu</a></div>
+<div class="brigade-item"><a href="brigades/Montumana.html">Montumana</a></div>
+<div class="brigade-item"><a href="brigades/Moorleah.html">Moorleah</a></div>
+<div class="brigade-item"><a href="brigades/Moriarty.html">Moriarty</a></div>
+<div class="brigade-item"><a href="brigades/Mt_Cameron.html">Mt Cameron</a></div>
+<div class="brigade-item"><a href="brigades/Mt_Nelson.html">Mt Nelson</a></div>
+<div class="brigade-item"><a href="brigades/Museum.html">Museum</a></div>
+<div class="brigade-item"><a href="brigades/Musselroe_Bay.html">Musselroe Bay</a></div>
+<div class="brigade-item"><a href="brigades/Naracoopa.html">Naracoopa</a></div>
+<div class="brigade-item"><a href="brigades/New_Norfolk.html">New Norfolk</a></div>
+<div class="brigade-item"><a href="brigades/Nile.html">Nile</a></div>
+<div class="brigade-item"><a href="brigades/Norfolk.html">Norfolk</a></div>
+<div class="brigade-item"><a href="brigades/North_Bruny.html">North Bruny</a></div>
+<div class="brigade-item"><a href="brigades/North_West_Operational_Support_Brigade.html">North West Operational Support Brigade</a></div>
+<div class="brigade-item"><a href="brigades/Nth_King_Isle.html">Nth King Isle</a></div>
+<div class="brigade-item"><a href="brigades/Nth_Motton.html">Nth Motton</a></div>
+<div class="brigade-item"><a href="brigades/Nubeena.html">Nubeena</a></div>
+<div class="brigade-item"><a href="brigades/Oatlands.html">Oatlands</a></div>
+<div class="brigade-item"><a href="brigades/Old_Beach.html">Old Beach</a></div>
+<div class="brigade-item"><a href="brigades/Orielton.html">Orielton</a></div>
+<div class="brigade-item"><a href="brigades/Ouse.html">Ouse</a></div>
+<div class="brigade-item"><a href="brigades/Parattah.html">Parattah</a></div>
+<div class="brigade-item"><a href="brigades/Penguin.html">Penguin</a></div>
+<div class="brigade-item"><a href="brigades/Perth.html">Perth</a></div>
+<div class="brigade-item"><a href="brigades/Pipers_Brook.html">Pipers Brook</a></div>
+<div class="brigade-item"><a href="brigades/Pipers_River.html">Pipers River</a></div>
+<div class="brigade-item"><a href="brigades/Poatina.html">Poatina</a></div>
+<div class="brigade-item"><a href="brigades/Port_Arthur.html">Port Arthur</a></div>
+<div class="brigade-item"><a href="brigades/Port_Sorell.html">Port Sorell</a></div>
+<div class="brigade-item"><a href="brigades/Primrose_Sands.html">Primrose Sands</a></div>
+<div class="brigade-item"><a href="brigades/Prospect.html">Prospect</a></div>
+<div class="brigade-item"><a href="brigades/Pyengana.html">Pyengana</a></div>
+<div class="brigade-item"><a href="brigades/Queenstown.html">Queenstown</a></div>
+<div class="brigade-item"><a href="brigades/Railton.html">Railton</a></div>
+<div class="brigade-item"><a href="brigades/Ravenswood.html">Ravenswood</a></div>
+<div class="brigade-item"><a href="brigades/Relbia.html">Relbia</a></div>
+<div class="brigade-item"><a href="brigades/Riana.html">Riana</a></div>
+<div class="brigade-item"><a href="brigades/Richmond.html">Richmond</a></div>
+<div class="brigade-item"><a href="brigades/Ridgley_Waratah.html">Ridgley/Waratah</a></div>
+<div class="brigade-item"><a href="brigades/Ringarooma.html">Ringarooma</a></div>
+<div class="brigade-item"><a href="brigades/Risdon_Vale.html">Risdon Vale</a></div>
+<div class="brigade-item"><a href="brigades/Rocherlea.html">Rocherlea</a></div>
+<div class="brigade-item"><a href="brigades/Rokeby.html">Rokeby</a></div>
+<div class="brigade-item"><a href="brigades/Rosebery__Tullah.html">Rosebery/ Tullah</a></div>
+<div class="brigade-item"><a href="brigades/Ross.html">Ross</a></div>
+<div class="brigade-item"><a href="brigades/Rossarden.html">Rossarden</a></div>
+<div class="brigade-item"><a href="brigades/Rowella.html">Rowella</a></div>
+<div class="brigade-item"><a href="brigades/Rubicon.html">Rubicon</a></div>
+<div class="brigade-item"><a href="brigades/Runnymede.html">Runnymede</a></div>
+<div class="brigade-item"><a href="brigades/Sandfly.html">Sandfly</a></div>
+<div class="brigade-item"><a href="brigades/Sandford.html">Sandford</a></div>
+<div class="brigade-item"><a href="brigades/Sassafras.html">Sassafras</a></div>
+<div class="brigade-item"><a href="brigades/Scamander.html">Scamander</a></div>
+<div class="brigade-item"><a href="brigades/Scottsdale.html">Scottsdale</a></div>
+<div class="brigade-item"><a href="brigades/Seven_Mile.html">Seven Mile</a></div>
+<div class="brigade-item"><a href="brigades/Sheffield.html">Sheffield</a></div>
+<div class="brigade-item"><a href="brigades/Sisters_Bch.html">Sisters Bch</a></div>
+<div class="brigade-item"><a href="brigades/Smithton.html">Smithton</a></div>
+<div class="brigade-item"><a href="brigades/Snug.html">Snug</a></div>
+<div class="brigade-item"><a href="brigades/Somerset.html">Somerset</a></div>
+<div class="brigade-item"><a href="brigades/Sorell.html">Sorell</a></div>
+<div class="brigade-item"><a href="brigades/South_Arm.html">South Arm</a></div>
+<div class="brigade-item"><a href="brigades/South_Bruny.html">South Bruny</a></div>
+<div class="brigade-item"><a href="brigades/Southport.html">Southport</a></div>
+<div class="brigade-item"><a href="brigades/Sprent.html">Sprent</a></div>
+<div class="brigade-item"><a href="brigades/St_Helens.html">St Helens</a></div>
+<div class="brigade-item"><a href="brigades/St_Marys.html">St Marys</a></div>
+<div class="brigade-item"><a href="brigades/St_Patricks_River.html">St Patricks River</a></div>
+<div class="brigade-item"><a href="brigades/Stanley.html">Stanley</a></div>
+<div class="brigade-item"><a href="brigades/Stn_Logistics.html">Stn Logistics</a></div>
+<div class="brigade-item"><a href="brigades/Stowport__Natone.html">Stowport/ Natone</a></div>
+<div class="brigade-item"><a href="brigades/Strahan.html">Strahan</a></div>
+<div class="brigade-item"><a href="brigades/Summerleas.html">Summerleas</a></div>
+<div class="brigade-item"><a href="brigades/Swansea.html">Swansea</a></div>
+<div class="brigade-item"><a href="brigades/Tarleton.html">Tarleton</a></div>
+<div class="brigade-item"><a href="brigades/Taroona.html">Taroona</a></div>
+<div class="brigade-item"><a href="brigades/Tea_Tree.html">Tea Tree</a></div>
+<div class="brigade-item"><a href="brigades/Togari.html">Togari</a></div>
+<div class="brigade-item"><a href="brigades/Tomahawk.html">Tomahawk</a></div>
+<div class="brigade-item"><a href="brigades/Triabunna.html">Triabunna</a></div>
+<div class="brigade-item"><a href="brigades/Tunbridge.html">Tunbridge</a></div>
+<div class="brigade-item"><a href="brigades/Tunnack.html">Tunnack</a></div>
+<div class="brigade-item"><a href="brigades/Ulverstone.html">Ulverstone</a></div>
+<div class="brigade-item"><a href="brigades/Upper_Huon.html">Upper Huon</a></div>
+<div class="brigade-item"><a href="brigades/Waterhouse.html">Waterhouse</a></div>
+<div class="brigade-item"><a href="brigades/Wattle_Grov..html">Wattle Grov.</a></div>
+<div class="brigade-item"><a href="brigades/Wattle_Hill.html">Wattle Hill</a></div>
+<div class="brigade-item"><a href="brigades/Wellington.html">Wellington</a></div>
+<div class="brigade-item"><a href="brigades/Wesley_Vale.html">Wesley Vale</a></div>
+<div class="brigade-item"><a href="brigades/Westbury.html">Westbury</a></div>
+<div class="brigade-item"><a href="brigades/Westerway.html">Westerway</a></div>
+<div class="brigade-item"><a href="brigades/Weymouth.html">Weymouth</a></div>
+<div class="brigade-item"><a href="brigades/Whitemark.html">Whitemark</a></div>
+<div class="brigade-item"><a href="brigades/Whitemore.html">Whitemore</a></div>
+<div class="brigade-item"><a href="brigades/Wilmot.html">Wilmot</a></div>
+<div class="brigade-item"><a href="brigades/Winkleigh.html">Winkleigh</a></div>
+<div class="brigade-item"><a href="brigades/Winnaleah.html">Winnaleah</a></div>
+<div class="brigade-item"><a href="brigades/Woodsdale.html">Woodsdale</a></div>
+<div class="brigade-item"><a href="brigades/Woolmers.html">Woolmers</a></div>
+<div class="brigade-item"><a href="brigades/Wynyard.html">Wynyard</a></div>
+<div class="brigade-item"><a href="brigades/W’Borough.html">W’Borough</a></div>
+<div class="brigade-item"><a href="brigades/Yolla.html">Yolla</a></div>
+<div class="brigade-item"><a href="brigades/Zeehan.html">Zeehan</a></div>
+
+    </div>
+</body>
+</html>
