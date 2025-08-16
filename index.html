@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tasmania Fire Service Brigades</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            color: #d32f2f;
+        }
+        .search-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .region {
+            margin-top: 40px;
+        }
+        .region h2 {
+            color: #1976d2;
+            border-bottom: 2px solid #1976d2;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin: 5px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #d32f2f;
+        }
+        .placeholder {
+            font-style: italic;
+            color: #777;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function searchBrigades() {
+            var input = document.getElementById("searchInput").value.toLowerCase();
+            var items = document.querySelectorAll("li");
+            items.forEach(function(item) {
+                if (item.textContent.toLowerCase().includes(input)) {
+                    item.style.display = "";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Tasmania Fire Service Brigades</h1>
+    <div class="search-container">
+        <input type="text" id="searchInput" onkeyup="searchBrigades()" placeholder="Search for a brigade...">
+    </div>
+
+</body>
+</html>
